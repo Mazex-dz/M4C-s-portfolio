@@ -92,17 +92,18 @@
 
       
         .navbar {
-            position: static;
-            width: calc(100% - 2rem);
-            max-width: 1200px;
-            background: rgba(10, 10, 15, 0.7);
-            backdrop-filter: blur(32px) saturate(180%);
-            border: 1px solid var(--glass-border);
-            border-radius: var(--border-radius);
-            z-index: 1000;
-            padding: var(--spacing-sm) var(--spacing-lg);
-            transition: all var(--transition-normal);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+          position: static;
+          width: 100%;
+          max-width: 1200px;
+          background: rgba(10, 10, 15, 0.7);
+          backdrop-filter: blur(32px) saturate(180%);
+          border: 1px solid var(--glass-border);
+          border-radius: var(--border-radius);
+          z-index: 1000;
+          padding: var(--spacing-sm) var(--spacing-lg);
+          transition: all var(--transition-normal);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+          margin: 1rem auto; /* وسط + مسافة */
         }
 
         .navbar.scrolled {
