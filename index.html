@@ -157,10 +157,12 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
             align-items: center;
+            justify-content: center;
         }
 
         .hero-text h1 {
@@ -178,7 +180,9 @@
             font-size: 1.25rem;
             color: var(--text-secondary);
             margin-bottom: 2.5rem;
-            max-width: 500px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .hero-image {
@@ -214,6 +218,8 @@
         .cta-group {
             display: flex;
             gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .btn {
@@ -351,7 +357,7 @@
         /* Works Grid */
         .works-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
             gap: 2rem;
         }
 
@@ -475,7 +481,7 @@
         /* Contact Section */
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
             gap: 2rem;
         }
 
@@ -585,19 +591,8 @@
 
         /* Responsive */
         @media (max-width: 992px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 3rem;
-            }
             .hero-text h1 {
                 font-size: 3.5rem;
-            }
-            .hero-text p {
-                margin: 0 auto 2.5rem;
-            }
-            .cta-group {
-                justify-content: center;
             }
             .about-grid {
                 grid-template-columns: 1fr;
@@ -618,6 +613,14 @@
             }
             .section-title {
                 font-size: 2.25rem;
+            }
+            .section {
+                padding: 60px 0;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+            .about-grid {
+                gap: 2.5rem;
             }
         }
 
@@ -661,15 +664,12 @@
                 <p>CS Engineering Student passionate about creating innovative solutions through technology and building the future one project at a time.</p>
                 <div class=" hero-btns cta-group">
                     <a href="#works" class="btn btn-primary">My Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                    <a href="assets/Resume.pdf" class="btn btn-outline" download>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="assets/Resume.pdf" class="btn btn-secondary" download>
                         <img src="assets/HFivzHdk89wpxciyACQg5.svg" alt="Download" style="width: 18px; margin-right: 8px; vertical-align: middle;">
                         Resume
                     </a>
                 </div>
-            </div>
-            <div class="hero-image" data-reveal>
-                <img src="assets/Hero.svg" alt="Abdelmalek Illustration">
             </div>
         </div>
     </section>
