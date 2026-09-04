@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M4C | Portfolio</title>
+    <title>M4C Portfolio</title>
     <link rel="icon" type="image/png" href="assets/X4Khccbkqtf8U3dij8HwK.png">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -11,8 +11,8 @@
             --bg-main: #05050a;
             --bg-secondary: #0a0a14;
             --accent-primary: #10b981; /* Emerald */
-            --accent-secondary: #6366f1; /* Indigo */
-            --accent-tertiary: #a855f7; /* Purple */
+            --accent-secondary: #059669; /* Emerald Shade */
+            --accent-tertiary: #34d399; /* Mint / Light Emerald */
             --text-primary: #ffffff;
             --text-secondary: #94a3b8;
             --text-muted: #64748b;
@@ -20,7 +20,7 @@
             --glass-border: rgba(255, 255, 255, 0.08);
             --glass-hover: rgba(255, 255, 255, 0.06);
             --shadow-glow: rgba(16, 185, 129, 0.2);
-            --gradient-primary: linear-gradient(135deg, #10b981 0%, #6366f1 100%);
+            --gradient-primary: linear-gradient(135deg, #10b981 0%, #059669 100%);
             --gradient-dark: linear-gradient(135deg, #05050a 0%, #0a0a14 100%);
             --border-radius: 20px;
             --border-radius-lg: 32px;
@@ -63,9 +63,9 @@
             height: 100%;
             z-index: -1;
             background: 
-                radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.05) 0%, transparent 40%),
-                radial-gradient(circle at 100% 100%, rgba(99, 102, 241, 0.05) 0%, transparent 40%),
-                radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.03) 0%, transparent 50%);
+                radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 100% 100%, rgba(16, 185, 129, 0.04) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(5, 150, 105, 0.03) 0%, transparent 50%);
         }
 
         /* Navbar */
@@ -680,99 +680,155 @@
         </div>
 
         <div class="works-grid">
-            <!-- Project 1 -->
+            <!-- Project 1: El Hayat Group -->
             <div class="work-card" data-reveal>
-                <div class="work-image">
-                    <img src="assets/El Hayat Group Medical Laboratory.png" alt="El Hayat Group">
-                </div>
+                <a href="https://el-hayat.com/" target="_blank" rel="noopener noreferrer" class="work-image" style="display:block;">
+                    <img src="assets/proj_el_hayat.png" alt="El Hayat Group">
+                </a>
                 <div class="work-content">
                     <h3 class="work-title">El Hayat Group</h3>
-                    <p class="work-desc">Healthcare website with bilingual support (French & Arabic) and a professional medical booking system.</p>
+                    <p class="work-desc">Comprehensive medical laboratory and healthcare platform offering bilingual (French & Arabic) medical service directories and direct consultation booking.</p>
                     <div class="work-tags">
                         <span class="work-tag">Medical</span>
+                        <span class="work-tag">Healthcare</span>
                         <span class="work-tag">Bilingual</span>
-                        <span class="work-tag">UI/UX</span>
                     </div>
+                    <a href="https://el-hayat.com/" target="_blank" rel="noopener noreferrer" class="work-link">
+                        Visit Website <span>&rarr;</span>
+                    </a>
                 </div>
             </div>
 
-            <!-- Project 2 -->
+            <!-- Project 2: BAC AI DZ -->
             <div class="work-card" data-reveal>
-                <div class="work-image">
-                    <img src="assets/_restaurant-la-ostra.png" alt="La Ostra">
-                </div>
+                <a href="https://bac-ai-dz.netlify.app" target="_blank" rel="noopener noreferrer" class="work-image" style="display:block;">
+                    <img src="assets/proj_bac_ai.png" alt="BAC AI DZ">
+                </a>
                 <div class="work-content">
-                    <h3 class="work-title">La Ostra</h3>
-                    <p class="work-desc">Seafood restaurant website featuring premium branding, menu presentation, and modern visual identity.</p>
+                    <h3 class="work-title">BAC AI DZ</h3>
+                    <p class="work-desc">An intelligent AI-powered learning assistant platform designed to empower Algerian high school students preparing for the national Baccalaureate examination.</p>
                     <div class="work-tags">
+                        <span class="work-tag">AI Platform</span>
+                        <span class="work-tag">EdTech</span>
+                        <span class="work-tag">Full-Stack</span>
+                    </div>
+                    <a href="https://bac-ai-dz.netlify.app" target="_blank" rel="noopener noreferrer" class="work-link">
+                        Visit Website <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3: Restaurant La Ostra -->
+            <div class="work-card" data-reveal>
+                <a href="https://restaurant-la-ostra.netlify.app" target="_blank" rel="noopener noreferrer" class="work-image" style="display:block;">
+                    <img src="assets/proj_la_ostra.png" alt="Restaurant La Ostra">
+                </a>
+                <div class="work-content">
+                    <h3 class="work-title">Restaurant La Ostra</h3>
+                    <p class="work-desc">Sophisticated seafood restaurant website showcasing gourmet Mediterranean culinary menus, private dining reservations, and premium coastal brand identity.</p>
+                    <div class="work-tags">
+                        <span class="work-tag">Seafood</span>
                         <span class="work-tag">Restaurant</span>
                         <span class="work-tag">Branding</span>
-                        <span class="work-tag">Design</span>
                     </div>
+                    <a href="https://restaurant-la-ostra.netlify.app" target="_blank" rel="noopener noreferrer" class="work-link">
+                        Visit Website <span>&rarr;</span>
+                    </a>
                 </div>
             </div>
 
-            <!-- Project 3 -->
+            <!-- Project 4: Gym Wolf DZ -->
             <div class="work-card" data-reveal>
-                <div class="work-image">
-                    <img src="assets/Sub's.png" alt="Sub's">
-                </div>
+                <a href="https://gymwolfdz.netlify.app" target="_blank" rel="noopener noreferrer" class="work-image" style="display:block;">
+                    <img src="assets/proj_gym_wolf.png" alt="Gym Wolf DZ">
+                </a>
                 <div class="work-content">
-                    <h3 class="work-title">Sub's Fast Food</h3>
-                    <p class="work-desc">High-energy fast food restaurant website designed for modern user engagement and mobile responsiveness.</p>
+                    <h3 class="work-title">Gym Wolf DZ</h3>
+                    <p class="work-desc">A modern fitness center and athletic club website with detailed training program breakdowns, coaching staff showcases, and membership options.</p>
+                    <div class="work-tags">
+                        <span class="work-tag">Fitness</span>
+                        <span class="work-tag">Gym & Sports</span>
+                        <span class="work-tag">Modern UI</span>
+                    </div>
+                    <a href="https://gymwolfdz.netlify.app" target="_blank" rel="noopener noreferrer" class="work-link">
+                        Visit Website <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 5: Expert Manager -->
+            <div class="work-card" data-reveal>
+                <a href="https://expert-manager-production.netlify.app" target="_blank" rel="noopener noreferrer" class="work-image" style="display:block;">
+                    <img src="assets/proj_expert_manager.png" alt="Expert Manager">
+                </a>
+                <div class="work-content">
+                    <h3 class="work-title">Expert Manager</h3>
+                    <p class="work-desc">High-level executive consulting and management portfolio highlighting corporate solutions, leadership track record, and operational management services.</p>
+                    <div class="work-tags">
+                        <span class="work-tag">Consulting</span>
+                        <span class="work-tag">Management</span>
+                        <span class="work-tag">Enterprise</span>
+                    </div>
+                    <a href="https://expert-manager-production.netlify.app" target="_blank" rel="noopener noreferrer" class="work-link">
+                        Visit Website <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 6: Crikx Burger & Crêpe -->
+            <div class="work-card" data-reveal>
+                <a href="https://crikx-burger-crepe-dz.netlify.app" target="_blank" rel="noopener noreferrer" class="work-image" style="display:block;">
+                    <img src="assets/proj_crikx_burger.png" alt="Crikx Burger & Crêpe">
+                </a>
+                <div class="work-content">
+                    <h3 class="work-title">Crikx Burger & Crêpe</h3>
+                    <p class="work-desc">Vibrant fast food dining showcase featuring artisanal smash burgers, sweet & savory crêpes, combo deals, and an appetizing visual menu experience.</p>
                     <div class="work-tags">
                         <span class="work-tag">Fast Food</span>
-                        <span class="work-tag">Energy</span>
-                        <span class="work-tag">Branding</span>
+                        <span class="work-tag">Burgers & Crêpes</span>
+                        <span class="work-tag">Menu</span>
                     </div>
+                    <a href="https://crikx-burger-crepe-dz.netlify.app" target="_blank" rel="noopener noreferrer" class="work-link">
+                        Visit Website <span>&rarr;</span>
+                    </a>
                 </div>
             </div>
 
-            <!-- Project 4 -->
+            <!-- Project 7: SoloSolution -->
             <div class="work-card" data-reveal>
-                <div class="work-image">
-                    <img src="assets/L'Arrosticino D'Oro.png" alt="L'Arrosticino D'Oro">
-                </div>
-                <div class="work-content">
-                    <h3 class="work-title">L'Arrosticino D'Oro</h3>
-                    <p class="work-desc">Elegant Italian restaurant platform with a sophisticated identity targeting international premium markets.</p>
-                    <div class="work-tags">
-                        <span class="work-tag">Italian</span>
-                        <span class="work-tag">Premium</span>
-                        <span class="work-tag">Italy</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="work-card" data-reveal>
-                <div class="work-image">
-                    <img src="assets/Expert Manager Portfolio.png" alt="Expert Manager">
-                </div>
-                <div class="work-content">
-                    <h3 class="work-title">Expert Portfolio</h3>
-                    <p class="work-desc">Professional personal branding showcase demonstrating career milestones and expertise.</p>
-                    <div class="work-tags">
-                        <span class="work-tag">Portfolio</span>
-                        <span class="work-tag">Branding</span>
-                        <span class="work-tag">Career</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="work-card" data-reveal>
-                <div class="work-image">
-                    <img src="assets/SoloSolution.png" alt="SoloSolution">
-                </div>
+                <a href="https://solo-solution.netlify.app" target="_blank" rel="noopener noreferrer" class="work-image" style="display:block;">
+                    <img src="assets/proj_solo_solution.png" alt="SoloSolution">
+                </a>
                 <div class="work-content">
                     <h3 class="work-title">SoloSolution</h3>
-                    <p class="work-desc">Full-featured E-Commerce solution with a product catalogue, shopping cart, and optimized conversion path.</p>
+                    <p class="work-desc">Full-featured digital e-commerce storefront delivering intuitive product catalogs, dynamic shopping cart workflows, and responsive checkout experiences.</p>
                     <div class="work-tags">
                         <span class="work-tag">E-Commerce</span>
-                        <span class="work-tag">Shop</span>
-                        <span class="work-tag">Market</span>
+                        <span class="work-tag">Online Store</span>
+                        <span class="work-tag">Retail</span>
                     </div>
+                    <a href="https://solo-solution.netlify.app" target="_blank" rel="noopener noreferrer" class="work-link">
+                        Visit Website <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 8: Kick & Kata -->
+            <div class="work-card" data-reveal>
+                <a href="https://inscripstionkickkata.netlify.app" target="_blank" rel="noopener noreferrer" class="work-image" style="display:block;">
+                    <img src="assets/proj_kick_kata.png" alt="Kick & Kata">
+                </a>
+                <div class="work-content">
+                    <h3 class="work-title">Kick & Kata Academy</h3>
+                    <p class="work-desc">Martial arts and combat sports club portal facilitating online student registrations, training program selection, and discipline scheduling.</p>
+                    <div class="work-tags">
+                        <span class="work-tag">Martial Arts</span>
+                        <span class="work-tag">Sports Club</span>
+                        <span class="work-tag">Registration</span>
+                    </div>
+                    <a href="https://inscripstionkickkata.netlify.app" target="_blank" rel="noopener noreferrer" class="work-link">
+                        Visit Website <span>&rarr;</span>
+                    </a>
                 </div>
             </div>
         </div>
