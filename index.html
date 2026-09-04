@@ -370,6 +370,42 @@
             border-color: var(--accent-primary);
         }
 
+        .work-card.featured {
+            grid-column: 1 / -1;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .work-card.featured .work-image {
+            width: 50%;
+            height: auto;
+            min-height: 350px;
+        }
+
+        .work-card.featured .work-content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .work-card.featured {
+                flex-direction: column;
+            }
+            .work-card.featured .work-image,
+            .work-card.featured .work-content {
+                width: 100%;
+            }
+            .work-card.featured .work-image {
+                min-height: 240px;
+            }
+            .work-card.featured .work-content {
+                padding: 2rem;
+            }
+        }
+
         .work-image {
             height: 240px;
             overflow: hidden;
@@ -680,6 +716,25 @@
         </div>
 
         <div class="works-grid">
+            <!-- Featured Project: Crikx Burger & Crêpe -->
+            <div class="work-card featured" data-reveal>
+                <a href="https://crikx-burger-crepe-dz.netlify.app" target="_blank" rel="noopener noreferrer" class="work-image" style="display:block;">
+                    <img src="assets/proj_crikx_burger.png" alt="Crikx Burger & Crêpe">
+                </a>
+                <div class="work-content">
+                    <h3 class="work-title">Crikx Burger & Crêpe</h3>
+                    <p class="work-desc">Vibrant fast food dining showcase featuring artisanal smash burgers, sweet & savory crêpes, combo deals, and an appetizing visual menu experience.</p>
+                    <div class="work-tags">
+                        <span class="work-tag">Fast Food</span>
+                        <span class="work-tag">Burgers & Crêpes</span>
+                        <span class="work-tag">Menu</span>
+                    </div>
+                    <a href="https://crikx-burger-crepe-dz.netlify.app" target="_blank" rel="noopener noreferrer" class="work-link">
+                        Visit Website <span>&rarr;</span>
+                    </a>
+                </div>
+            </div>
+
             <!-- Project 1: El Hayat Group -->
             <div class="work-card" data-reveal>
                 <a href="https://el-hayat.com/" target="_blank" rel="noopener noreferrer" class="work-image" style="display:block;">
@@ -775,24 +830,7 @@
                 </div>
             </div>
 
-            <!-- Project 6: Crikx Burger & Crêpe -->
-            <div class="work-card" data-reveal>
-                <a href="https://crikx-burger-crepe-dz.netlify.app" target="_blank" rel="noopener noreferrer" class="work-image" style="display:block;">
-                    <img src="assets/proj_crikx_burger.png" alt="Crikx Burger & Crêpe">
-                </a>
-                <div class="work-content">
-                    <h3 class="work-title">Crikx Burger & Crêpe</h3>
-                    <p class="work-desc">Vibrant fast food dining showcase featuring artisanal smash burgers, sweet & savory crêpes, combo deals, and an appetizing visual menu experience.</p>
-                    <div class="work-tags">
-                        <span class="work-tag">Fast Food</span>
-                        <span class="work-tag">Burgers & Crêpes</span>
-                        <span class="work-tag">Menu</span>
-                    </div>
-                    <a href="https://crikx-burger-crepe-dz.netlify.app" target="_blank" rel="noopener noreferrer" class="work-link">
-                        Visit Website <span>&rarr;</span>
-                    </a>
-                </div>
-            </div>
+
 
             <!-- Project 7: SoloSolution -->
             <div class="work-card" data-reveal>
